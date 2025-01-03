@@ -327,8 +327,10 @@ function formatWords(word){
     return `<div class="word"><span class="letter">${word.split("").join('</span><span class="letter">')}</span></div>`;
 }
 var gameTime;
+let z = 0;
 function newGame(){
     window.timer= null;
+    z=0;
     const words= maiBtataHaiWords.split(" ");
     const wordsCount=words.length;
     function randomWord(){
@@ -376,7 +378,7 @@ function resetTimer(){
     cursor.style.left = '128px';
 } 
 // WPMMMM
-let z = 0;
+
 // const totWords=[...document.querySelectorAll('.word')];
 // const lastTypedWord = document.querySelector('.word.current');
 // const lastTypedLetter = document.querySelector('.letter.current');
